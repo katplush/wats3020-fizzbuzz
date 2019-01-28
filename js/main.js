@@ -14,6 +14,9 @@ while (!isInteger) {
     maxNumber = Number.parseInt(input);
     isInteger = Number.isSafeInteger(maxNumber) && maxNumber > 0;
   }
+  if (!isInteger) {
+    alert('Please try again');
+  }
 }
 
 fbResults = [];
